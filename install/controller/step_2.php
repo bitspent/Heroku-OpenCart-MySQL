@@ -118,9 +118,9 @@ class ControllerStep2 extends Controller {
 			$this->error['warning'] = 'Warning: A database extension needs to be loaded in the php.ini for OpenCart to work!';
 		}
 
-		if (!extension_loaded('gd')) {
-			$this->error['warning'] = 'Warning: GD extension needs to be loaded for OpenCart to work!';
-		}
+		// if (!extension_loaded('gd')) {
+		// 	$this->error['warning'] = 'Warning: GD extension needs to be loaded for OpenCart to work!';
+		// }
 
 		if (!extension_loaded('curl')) {
 			$this->error['warning'] = 'Warning: CURL extension needs to be loaded for OpenCart to work!';
